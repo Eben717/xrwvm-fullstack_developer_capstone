@@ -11,6 +11,7 @@ from django.http import JsonResponse
 from django.contrib.auth import login, authenticate
 import logging
 import json
+from .restapis import get_request, analyze_review_sentiments, post_review
 from django.views.decorators.csrf import csrf_exempt
 from .populate import initiate
 
